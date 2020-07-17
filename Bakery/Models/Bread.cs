@@ -2,10 +2,18 @@ using System;
 
 namespace Bakery.Models
 {
-  public class Item
+  public class Bread
   {
+    // properties
+    public int Price { get; set; }
+    public int Amount { get; set; }
 
-    // properties, methods, etc. will go here.
+    // constructor
+    public Bread(int amount)
+    {
+        Price = 5;
+        Amount = amount;
+    }
 
   }
 }

@@ -12,9 +12,10 @@ _Description_
 
 | Spec | Input | Output |
 | :-------------      | :------------- | :------------- |
-| ** 1. Program will take in inputted word | "apple" | -- |
-| ** 2. Program will return true if word is a palindrome| "hannah" | true |
-| ** 3. Program will return false if word is not a palindrome | "word" | false |
+| ** 1. Program will accept inputted int amount of bread | 4 | -- |
+| ** 2. Program will accept inputted int amount of pastries | 5 | true |
+| ** 3. Program will calculate total price for inputted amount of bread and pastries | 3 bread, 3 pastry | $21 |
+| ** 4. Program will update total price to reflect discounts offered by bakery | 3 bread, 3 pastry | $15 |
 
 ## Setup/Installation Requirements
 

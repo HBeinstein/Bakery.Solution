@@ -10,17 +10,20 @@ namespace Bakery.Tests
     [TestMethod]
     public void Bread_InstantiateEmptyBreadObj_True()
     {
-      Bread breadTest = new Bread();
+      Bread breadTest = new Bread(3);
       Assert.AreEqual(typeof(Bread), breadTest.GetType());
     }
 
     [TestMethod]
-    public void Bread_InstantiateBreadObjWithPriceParam_True()
+    public void Bread_InstantiateBreadObjWithPriceAndAmount_True()
     {
       int testPrice = 5;
-      Bread breadTest = new Bread();
+      int testAmount = 2;
+      Bread breadTest = new Bread(3);
       int breadTestPrice = breadTest.Price;
+      int breadTestAmount = breadTest.Amount;
       Assert.AreEqual(testPrice, breadTestPrice);
+      Assert.AreEqual(testAmount, breadTestAmount);
     }
   }
 }

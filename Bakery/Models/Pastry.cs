@@ -4,16 +4,16 @@ namespace Bakery.Models
 {
   public class Pastry
   {
-//  // properties
-//     public int Price { get; set; }
-//     public int Amount { get; set; }
+ // properties
+    public int Price { get; set; }
+    // public int Amount { get; set; }
 
-//     // constructor
-//     public Pastry(int amount)
-//     {
-//         Price = 2;
-//         Amount = amount;
-//     }
+    // constructor
+    public Pastry()
+    {
+        Price = 3;
+        // Amount = amount;
+    }
 
   }
 }

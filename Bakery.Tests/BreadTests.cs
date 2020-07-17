@@ -29,8 +29,8 @@ namespace Bakery.Tests
     [TestMethod]
     public void TotalPrice_CalcTotalPriceBreadOrder_True()
     {
-      int testTotalPrice = 5;
-      Bread breadTest = new Bread(1);
+      int testTotalPrice = 15;
+      Bread breadTest = new Bread(4);
       int breadTestTotalPrice = breadTest.TotalPrice();
       Assert.AreEqual(testTotalPrice, breadTestTotalPrice);
     }

@@ -29,8 +29,8 @@ namespace Bakery.Tests
     [TestMethod]
     public void TotalPrice_CalcTotalPricePastryOrder_True()
     {
-      int testTotalPrice = 4;
-      Pastry pastryTest = new Pastry(2);
+      int testTotalPrice = 7;
+      Pastry pastryTest = new Pastry(4);
       int pastryTestTotalPrice = pastryTest.TotalPrice();
       Assert.AreEqual(testTotalPrice, pastryTestTotalPrice);
     }

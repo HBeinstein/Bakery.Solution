@@ -8,7 +8,9 @@ namespace Bakery
   {
     public static void Main() 
     {
-      Console.WriteLine("Welcome to our bakery! We only make bread and pastries.");
+      Console.WriteLine("Welcome to our bakery! We only make bread and pastries. 🥖🍞🥐");
+      Console.WriteLine("Bread is $5 a loaf, but if you buy 2, you get one loaf free!");
+      Console.WriteLine("Pastries are $2 each, or 2 for $5!");
       Console.WriteLine("How many loaves of bread would you like?");
       int userBread = int.Parse(Console.ReadLine());
       Console.WriteLine("How many pastries would you like?");

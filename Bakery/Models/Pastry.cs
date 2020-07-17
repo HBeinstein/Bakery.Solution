@@ -11,7 +11,7 @@ namespace Bakery.Models
     // constructor
     public Pastry()
     {
-        Price = 3;
+        Price = 2;
         // Amount = amount;
     }
 

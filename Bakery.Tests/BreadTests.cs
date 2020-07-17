@@ -5,7 +5,7 @@ using Bakery.Models;
 namespace Bakery.Tests
 {
   [TestClass]
-  public class ItemTests
+  public class BreadTests
   {
     [TestMethod]
     public void Bread_InstantiateEmptyBreadObj_True()

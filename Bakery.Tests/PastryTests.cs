@@ -2,13 +2,28 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using Bakery.Models;
 
-namespace ToDoList.Tests
+namespace Bakery.Tests
 {
   [TestClass]
-  public class ItemTests
+  public class PastryTests
   {
+    [TestMethod]
+    public void Pastry_InstantiateEmptyPastryObj_True()
+    {
+      Pastry pastryTest = new Pastry();
+      Assert.AreEqual(typeof(Pastry), pastryTest.GetType());
+    }
 
-    // Test methods will go here.
-
+    // [TestMethod]
+    // public void Bread_InstantiateBreadObjWithPriceAndAmount_True()
+    // {
+    //   int testPrice = 5;
+    //   int testAmount = 2;
+    //   Bread breadTest = new Bread(2);
+    //   int breadTestPrice = breadTest.Price;
+    //   int breadTestAmount = breadTest.Amount;
+    //   Assert.AreEqual(testPrice, breadTestPrice);
+    //   Assert.AreEqual(testAmount, breadTestAmount);
+    // }
   }
 }

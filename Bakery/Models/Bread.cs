@@ -1,4 +1,6 @@
-namespace ProjectName.Models
+using System;
+
+namespace Bakery.Models
 {
   public class Item
   {

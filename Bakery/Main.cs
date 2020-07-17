@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
-using ItemNamespace;
+using Bakery.Models;
 
-namespace ProjectName
+namespace Bakery
 {
-  public class ProjectName
+  public class Bakery
   {
     public static void Main()
     {

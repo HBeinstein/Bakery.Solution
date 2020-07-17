@@ -21,6 +21,28 @@ namespace Bakery
       int pastryOrderTotal = pastryOrder.TotalPrice();
 
       Console.WriteLine("Your order total will be $" + (breadOrderTotal + pastryOrderTotal));
+
+
+
+
+      int notIncludedInDeal = total - (total % 3);
+      int 
+
+
+
+
+
+
+
+      int total = 0;
+      for (let i = 0; i < input; i++) {
+        if(input % 3) {
+          total +=
+        } else {
+          total +=
+        }
+        return total;
+      }
     }
   }
 }

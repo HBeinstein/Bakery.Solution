@@ -16,23 +16,19 @@ namespace Bakery.Models
     }
 
      // methods
+    // public int TotalPrice()
+    // {
+    //   return Price * Amount;
+    // } 
+
     public int TotalPrice()
     {
-      return Price * Amount;
-    } 
-
-    public int TotalPriceDiscounted()
-    {
       int total = 0;
-      for (int i = 1; i < Amount; i++)
+      for (int i = 1; i <= Amount; i++)
       {
         if(i % 3 != 0)
         {
-          total += Price;
-        }
-        else 
-        {
-          total -= Price;
+          total = total + Price;
         }
       }
       return total;

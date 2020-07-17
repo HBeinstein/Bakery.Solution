@@ -17,16 +17,7 @@ namespace Bakery
       Bread breadOrder = new Bread(userBread);
       Pastry pastryOrder = new Pastry(userPastry);
 
-      int breadOrderTotal = breadOrder.TotalPriceDiscounted();
-      // int notIncludedInDealBread = userBread % 3;
-      // int includedInDealBread = userBread - notIncludedInDealBread;
-
-      // int breadOrderTotal = breadOrder.TotalPrice();
-      // breadOrder.Price = 3.333;
-      // breadOrderTotal += Math.Round(breadOrder.TotalPriceDiscounted());
-
-      Console.WriteLine(breadOrderTotal);
-
+      int breadOrderTotal = breadOrder.TotalPrice();
       int pastryOrderTotal = pastryOrder.TotalPrice();
 
       Console.WriteLine("Your order total will be $" + (breadOrderTotal + pastryOrderTotal));

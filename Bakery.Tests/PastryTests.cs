@@ -15,7 +15,7 @@ namespace Bakery.Tests
     }
 
     [TestMethod]
-    public void Bread_InstantiateBreadObjWithPriceAndAmount_True()
+    public void Pastry_InstantiatePastryObjWithPriceAndAmount_True()
     {
       int testPrice = 2;
       int testAmount = 2;
@@ -24,6 +24,15 @@ namespace Bakery.Tests
       int pastryTestAmount = pastryTest.Amount;
       Assert.AreEqual(testPrice, pastryTestPrice);
       Assert.AreEqual(testAmount, pastryTestAmount);
+    }
+
+    [TestMethod]
+    public void TotalPrice_CalcTotalPricePastryOrder_True()
+    {
+      int testTotalPrice = 5;
+      Pastry pastryTest = new Pastry(2);
+      int pastryTestTotalPrice = pastryTest.TotalPrice();
+      Assert.AreEqual(testTotalPrice, pastryTestTotalPrice);
     }
     
   }

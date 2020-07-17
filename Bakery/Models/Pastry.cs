@@ -4,7 +4,7 @@ namespace Bakery.Models
 {
   public class Pastry
   {
- // properties
+    // properties
     public int Price { get; set; }
     public int Amount { get; set; }
 
@@ -14,6 +14,12 @@ namespace Bakery.Models
         Price = 2;
         Amount = amount;
     }
+    
+    // methods
+    public int TotalPrice()
+    {
+      return Price * Amount;
+    } 
 
   }
 }

@@ -1,13 +1,17 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ToDoList.Models;
+using System;
+using Bakery.Models;
 
-namespace ToDoList.Tests
+namespace Bakery.Tests
 {
   [TestClass]
   public class ItemTests
   {
-
-    // Test methods will go here.
-
+    [TestMethod]
+    public void Bread_InstantiateBreadObj_True()
+    {
+      Bread BreadTest = new Bread();
+      Assert.AreEqual(typeof(Bread), BreadTest.GetType());
+    }
   }
 }

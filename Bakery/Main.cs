@@ -24,9 +24,9 @@ namespace Bakery
 
 
 
-
-      int notIncludedInDeal = total - (total % 3);
-      int 
+      int notIncludedInDeal = total % 3;
+      int IncludedInDeal = total - notIncludedInDeal;
+      
 
 
 

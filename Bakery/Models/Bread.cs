@@ -21,5 +21,22 @@ namespace Bakery.Models
       return Price * Amount;
     } 
 
+    public int TotalPriceDiscounted()
+    {
+      int total = 0;
+      for (int i = 1; i < Amount; i++)
+      {
+        if(i % 3 != 0)
+        {
+          total += Price;
+        }
+        else 
+        {
+          total -= Price;
+        }
+      }
+      return total;
+    } 
+
   }
 }

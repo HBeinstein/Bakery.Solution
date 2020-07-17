@@ -25,5 +25,6 @@ namespace Bakery.Tests
       Assert.AreEqual(testPrice, pastryTestPrice);
       Assert.AreEqual(testAmount, pastryTestAmount);
     }
+    
   }
 }

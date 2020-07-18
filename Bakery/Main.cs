@@ -24,20 +24,53 @@ namespace Bakery
 
       Console.WriteLine("Your order total will be $" + (breadOrderTotal + pastryOrderTotal));
 
-      while(true)
+      Console.WriteLine("Would you like to add anything to your order? Enter yes or no");
+      string yesOrNo = Console.ReadLine().ToLower();
+      
+      if(yesOrNo == "yes")
       {
-        Console.WriteLine("Would you like to add anything to your order?");
-        Console.WriteLine("Please enter only bread or pastry");
-        string addMore = Console.ReadLine().ToLower();
+        while(true)
+        {
+          Console.WriteLine("Please enter only bread or pastry");
+          string addMore = Console.ReadLine().ToLower();
+          int newBreadOrderTotal = 0;
+          int newPastryOrderTotal = 0;
 
-        if(addMore == "bread") 
-        {
-          break;
+          if(addMore == "bread") 
+          { 
+            Console.WriteLine("How many loaves of bread do you want to add to your order?");
+            int addBreadAmount = int.Parse(Console.ReadLine());
+            newBreadOrderTotal = breadOrder.UpdateTotalAmount(addBreadAmount);
+            newPastryOrderTotal = pastryOrder.TotalPrice();
+            Console.WriteLine("Your final order total will be $" + (newBreadOrderTotal + pastryOrderTotal));
+            Console.WriteLine("anything else? yes/no");
+            string yesNo = Console.ReadLine().ToLower();
+            if (yesNo == "no")
+            {
+              Console.WriteLine("Your final order total will be $" + (newBreadOrderTotal + newPastryOrderTotal));
+              break;
+            }
+          }
+          if(addMore == "pastry")
+          {
+            Console.WriteLine("How many pastries do you want to add to your order?");
+            int addPastryAmount = int.Parse(Console.ReadLine());
+            newPastryOrderTotal = pastryOrder.UpdateTotalAmount(addPastryAmount);
+            newBreadOrderTotal = breadOrder.TotalPrice();
+            Console.WriteLine("Your order total will be $" + (newBreadOrderTotal + newPastryOrderTotal));
+            Console.WriteLine("anything else? yes/no");
+            string yesNo = Console.ReadLine().ToLower();
+            if (yesNo == "no")
+            {
+              Console.WriteLine("Your final order total will be $" + (newBreadOrderTotal + newPastryOrderTotal));
+              break;
+            }
+          }
         }
-        if(addMore == "pastry")
-        {
-          break;
-        }
+      }
+      else 
+      {
+        Console.WriteLine("Your final order total will be $" + (breadOrderTotal + pastryOrderTotal));
       }
     }
   }

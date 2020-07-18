@@ -29,5 +29,11 @@ namespace Bakery.Models
       return total;
     } 
 
+    public int UpdateTotalAmount(int addedAmount)
+    {
+      Amount += addedAmount;
+      return TotalPrice();
+    }
+
   }
 }

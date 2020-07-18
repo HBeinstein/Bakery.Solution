@@ -24,24 +24,21 @@ namespace Bakery
 
       Console.WriteLine("Your order total will be $" + (breadOrderTotal + pastryOrderTotal));
 
+      while(true)
+      {
+        Console.WriteLine("Would you like to add anything to your order?");
+        Console.WriteLine("Please enter only bread or pastry");
+        string addMore = Console.ReadLine().ToLower();
 
-      
-
-
-
-
-
-
-
-      // int total = 0;
-      // for (let i = 0; i < input; i++) {
-      //   if(input % 3) {
-      //     total +=
-      //   } else {
-      //     total +=
-      //   }
-      //   return total;
-      // }
+        if(addMore == "bread") 
+        {
+          break;
+        }
+        if(addMore == "pastry")
+        {
+          break;
+        }
+      }
     }
   }
 }

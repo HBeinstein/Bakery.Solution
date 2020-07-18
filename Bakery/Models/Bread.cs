@@ -15,12 +15,7 @@ namespace Bakery.Models
         Amount = amount;
     }
 
-     // methods
-    // public int TotalPrice()
-    // {
-    //   return Price * Amount;
-    // } 
-
+    // methods
     public int TotalPrice()
     {
       int total = 0;

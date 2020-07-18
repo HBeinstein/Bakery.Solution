@@ -43,5 +43,14 @@ namespace Bakery.Tests
       int breadTestTotalPrice = breadTest.UpdateTotalAmount(1);
       Assert.AreEqual(testTotalPrice, breadTestTotalPrice);
     }
+
+    [TestMethod]
+    public void UpdateTotalAmount_NewTotalPastryPriceAfterAdding_True()
+    {
+      int testTotalPrice = 5;
+      Pastry pastryTest = new Pastry(1);
+      int pastryTestTotalPrice = pastryTest.UpdateTotalAmount(1);
+      Assert.AreEqual(testTotalPrice, pastryTestTotalPrice);
+    }
   }
 }

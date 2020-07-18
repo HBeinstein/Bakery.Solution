@@ -19,6 +19,8 @@ _Pierre's Bakery is a console app built to practice C# basics. The app takes a u
 | 5. Program instantiate new pastry object with price and amount values | Pastry "" = new Pastry | Amount: 2, Price: 2 |
 | 6. Program will instantiate new bread object with price and amount values | Bread "" = new Bread | Amount: 2, Price: 5 |
 | 7. Program will calculate total price for inputted amount of bread and pastries (including all discounts) | 3 bread, 3 pastry | $15 |
+| 8. Program will update total amount of bread if prompted and re-calc total amount | Enter loaves of bread to add: 1 | total price += $5 |
+| 9. Program will update total amount of pastries if prompted and re-calc total amount | Enter pastries to add: 1 | total price += $2 |
 
 ## Setup/Installation Requirements
 

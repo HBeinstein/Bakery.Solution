@@ -42,7 +42,7 @@ namespace Bakery
             int addBreadAmount = int.Parse(Console.ReadLine());
             newBreadOrderTotal = breadOrder.UpdateTotalAmount(addBreadAmount);
             newPastryOrderTotal = pastryOrder.TotalPrice();
-            Console.WriteLine("Your final order total will be $" + (newBreadOrderTotal + pastryOrderTotal));
+            Console.WriteLine("Your order total will be $" + (newBreadOrderTotal + newPastryOrderTotal));
             Console.WriteLine("anything else? yes/no");
             string yesNo = Console.ReadLine().ToLower();
             if (yesNo == "no")

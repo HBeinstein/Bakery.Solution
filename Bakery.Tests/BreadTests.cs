@@ -47,7 +47,7 @@ namespace Bakery.Tests
     [TestMethod]
     public void UpdateTotalAmount_NewTotalPastryPriceAfterAdding_True()
     {
-      int testTotalPrice = 5;
+      int testTotalPrice = 4;
       Pastry pastryTest = new Pastry(1);
       int pastryTestTotalPrice = pastryTest.UpdateTotalAmount(1);
       Assert.AreEqual(testTotalPrice, pastryTestTotalPrice);
